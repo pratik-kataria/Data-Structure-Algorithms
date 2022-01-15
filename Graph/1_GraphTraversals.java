@@ -95,6 +95,8 @@ public class GraphTraversals{
                 if(!visited.contains(neighbor))
                 {
                     queue.add(neighbor);
+                    // this is very important because we do not want to add duplicate nodes in the queue
+                    visited.add(neighbor)
                 }
             }
         }
